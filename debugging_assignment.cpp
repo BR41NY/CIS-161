@@ -11,21 +11,21 @@ int main ()
     string Pause;
     const int SIZE = 6;
     string Names[SIZE] =  { "Name1", "Name2", "Name3", "Name4", "Name5", "Name6" };
-    
-    cout << "In Main " << endl;
-    
+        
     for (int index = 0; index < SIZE ; index++)
     {          
        cout << Names[index] << endl;
     }
 
+    cout << "In Main " << endl << endl;
     Method1();
     cout << "In Main " << endl << endl;
-    Method3();
+    Method2();
     cout << "In Main " << endl << endl;
+    Method3();
 
-    std::cout <<"Press a key to exit" << endl;
-    std::cin >> Pause; 
+    cout << "Press a key to exit" << endl;
+    cin >> Pause;
 
     return 0;
 
@@ -34,16 +34,14 @@ int main ()
 void Method1()
 { 
     cout << ("Break Point in Method1") << endl;
-    Method2();
 }
 
 void Method2()
 {
-    cout <<("Break Point in Method2") << endl;  // BreakPoint
-    cout <<("Break Point in Method2") << endl;  // BreakPoint
+    cout << ("Break Point in Method2") << endl;
 }
 
 void Method3()
 {
-    cout <<("Break Point in Method3")<< endl;  // Breakpoint
+    cout << ("Break Point in Method3") << endl;
 }
